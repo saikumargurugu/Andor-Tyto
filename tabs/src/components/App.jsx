@@ -1,12 +1,15 @@
-import React from "react";
+import "./App.css";
+
 // https://fluentsite.z22.web.core.windows.net/quick-start
 import { Provider, teamsTheme } from "@fluentui/react-northstar";
-import { HashRouter as Router, Redirect, Route } from "react-router-dom";
+import React, { useEffect } from "react";
+import { Redirect, Route, HashRouter as Router } from "react-router-dom";
+
+import Overview from "./Overview";
 import Privacy from "./Privacy";
-import TermsOfUse from "./TermsOfUse";
 import Tab from "./Tab";
-import "./App.css";
 import TabConfig from "./TabConfig";
+import TermsOfUse from "./TermsOfUse";
 import { useTeams } from "msteams-react-base-component";
 
 /**
@@ -15,6 +18,7 @@ import { useTeams } from "msteams-react-base-component";
  */
 export default function App() {
   const { theme } = useTeams({})[0];
+  // useEffect(()=>{alert("Im loading again");},[])
   return (
     <Provider theme={theme || teamsTheme} styles={{ backgroundColor: "#eeeeee" }}>
       <Router>
@@ -26,6 +30,7 @@ export default function App() {
           <Route exact path="/termsofuse" component={TermsOfUse} />
           <Route exact path="/tab" component={Tab} />
           <Route exact path="/config" component={TabConfig} />
+          <Route exact path="/overview" component={Overview} />
         </>
       </Router>
     </Provider>

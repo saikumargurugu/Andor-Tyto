@@ -1,15 +1,18 @@
+import './sidePan.css';
+
+import * as microsoftTeams from "@microsoft/teams-js";
+
 import React, { useEffect, useState } from 'react';
+
 import Box from '@mui/material/Box';
+import Button from '@mui/material/Button';
 import Card from '@mui/material/Card';
 import CardActions from '@mui/material/CardActions';
 import CardContent from '@mui/material/CardContent';
-import Button from '@mui/material/Button';
-import Typography from '@mui/material/Typography';
-import * as microsoftTeams from "@microsoft/teams-js";
-import upArrow from '../../assets/arrowup.png';
-import logo from '../../assets/logoBig.png';
-import './sidePan.css';
 import PresentToAllIcon from '@mui/icons-material/PresentToAll';
+import Typography from '@mui/material/Typography';
+import logo from '../../assets/logoBig.png';
+import upArrow from '../../assets/arrowup.png';
 
 export default function OutlinedCard() {
   const [msg, setMsg] = useState("")
@@ -84,12 +87,13 @@ export default function OutlinedCard() {
           element && element?.offsetWidth && element?.offsetWidth < 300 ?
             <div className='card' ><Card>{card}</Card></div>
             :
-            <iframe title="techCheck"
-              height="100%"
-              width="100%"
-              src="https://www.youtube.com/embed/0_KHaw_pf6E" frameborder="0" allowfullscreen
+            // <iframe title="techCheck"
+            //   height="100%"
+            //   width="100%"
+            //   src="https://www.youtube.com/embed/0_KHaw_pf6E" frameborder="0" allowfullscreen
 
-            />
+            // />
+            <iframe style={{height:"600px", width:"600px"}} src="https://stage1.tytocare.com/index.htm#/startOnlineVisit/2mZ47a56/OeUTCvnPVhNJ7lQQmFTLwmIMW0YiwhTEfFcGCqlyPV4*/true" sandbox="allow-same-origin allow-popups allow-forms allow-scripts allow-top-navigation" allow="autoplay; fullscreen; animations" frameBorder="0" title="Tytocare"/>
         }
 
       </Box>
