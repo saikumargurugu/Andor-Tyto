@@ -1,0 +1,16 @@
+{
+    "name": "andortyto",
+    "version": "0.0.1",
+    "description": "Andor Tyto App",
+    "author": "andor health",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "devDependencies": {
+        "@microsoft/teamsfx-cli": "1.*"
+    },
+    "license": "MIT",
+    "dependencies": {
+        "@mui/icons-material": "^5.8.3"
+    }
+}

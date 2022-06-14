@@ -1,0 +1,21 @@
+.sidePanContent{
+    display: flex;
+    flex-direction: row;
+}
+.logoText{
+    width: max-content;
+    display: flex;
+    flex-direction:column;
+    justify-content: center;
+}
+.logo{
+    align-self: center;
+}
+.arrow{
+    /* width: 40px; */
+    margin-right: 30px;
+}
+
+.card{
+    margin-top: 0px;
+}
