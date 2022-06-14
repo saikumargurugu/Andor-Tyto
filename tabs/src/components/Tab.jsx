@@ -1,6 +1,8 @@
-import React, { useEffect, useState } from "react";
 // import { Welcome } from "./sample/Welcome";
 import * as microsoftTeams from "@microsoft/teams-js";
+
+import React, { useEffect, useState } from "react";
+
 import OutlinedCard from "./modules/sidePan";
 
 export default function Tab() {
@@ -18,8 +20,9 @@ export default function Tab() {
 //   await microsoftTeams.getContext(Callback)
 // }
 // performInit();
-  // const context = microsoftTeams.getContext()
-  // console.log("==============",context,JSON.stringify(context));
+//   const context = microsoftTeams.getContext()
+//   console.log("==============",context,JSON.stringify(context));
+  
   return (
     <div >
       <OutlinedCard/>

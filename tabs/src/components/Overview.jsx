@@ -14,7 +14,7 @@ import logo from '../assets/logoBig.png';
  * make their choices and once they are done you will need to validate
  * their choices and communicate that to Teams to enable the save button.
  */
-class TabConfig extends React.Component {
+class Overview extends React.Component {
   render() {
     // Initialize the Microsoft Teams SDK
     microsoftTeams.initialize();
@@ -63,4 +63,4 @@ class TabConfig extends React.Component {
   }
 }
 
-export default TabConfig;
+export default Overview;
